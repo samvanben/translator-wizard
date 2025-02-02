@@ -1,5 +1,3 @@
-# hello-world-vue
-
 ## Project setup
 ```
 npm install
