@@ -37,7 +37,7 @@
                         source:"auto",
                         target:this.targetLanguage,
                         format:"text",
-                        api_key:process.env.VUE_APP_LIBRE_TRANSLATE_API_KEY
+                        api_key:import.meta.env.VITE_LIBRE_TRANSLATE_API_KEY
 
                     };
                 
