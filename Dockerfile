@@ -6,7 +6,7 @@ copy . .
 RUN ls -l /app/set-secrets.sh
 RUN chmod +x /app/set-secrets.sh
 RUN ls -l /app/set-secrets.sh
-RUN /app/set-secrets.sh
+RUN sh /app/set-secrets.sh
 run npm run build
 from nginx:alpine
 copy --from=build /app/dist /usr/share/nginx/html
