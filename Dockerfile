@@ -3,8 +3,8 @@ workdir /app
 copy package*.json ./
 run npm install
 copy . .
-RUN ls -l /app
-RUN chmod +x ./set-secrets.sh && ./set-secrets.sh
+RUN ls -l
+RUN chmod +x ./app/set-secrets.sh && ./app/set-secrets.sh
 run npm run build
 from nginx:alpine
 copy --from=build /app/dist /usr/share/nginx/html
