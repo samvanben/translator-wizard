@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the secrets file injected by Render
-SECRETS_FILE="/etc/secrets/secrets.txt"
+SECRETS_FILE="./secrets.txt"
 
 # Check if the secrets file exists
 if [ -f "$SECRETS_FILE" ]; then
