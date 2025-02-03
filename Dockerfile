@@ -4,7 +4,6 @@ copy package*.json ./
 run npm install
 copy . .
 RUN ls -l /app
-RUN cat /app/secrets.txt
 RUN ls -l /app/set-secrets.sh
 RUN chmod +x /app/set-secrets.sh
 RUN ls -l /app/set-secrets.sh
