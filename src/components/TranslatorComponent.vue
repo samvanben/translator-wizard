@@ -40,7 +40,7 @@
                         api_key:process.env.VUE_APP_LIBRE_TRANSLATE_API_KEY ?? process.env.KEY
 
                     };
-                
+                console.log(process.env);
                 try{
                     if (payload.api_key == null || payload.api_key == undefined) {
                         throw Error("api key not defined :(")
