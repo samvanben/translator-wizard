@@ -46,7 +46,7 @@
                     this.translatedText = response.data.translatedText
                 }
                 catch(error){
-                    alert("Something hecked up, man");
+                    alert(payload.api_key == null || payload.api_key == undefined ? 'No Api Key provided' : 'Something hecked up, man');
                 }
             },
             async getLanguages(){
