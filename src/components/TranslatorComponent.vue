@@ -42,11 +42,14 @@
                     };
                 
                 try{
+                    if (payload.api_key == null || payload.api_key == undefined) {
+                        throw Error("api key not defined :(")
+                    }
                     const response = await axios.post("https://libretranslate.com/translate", payload)
                     this.translatedText = response.data.translatedText
                 }
                 catch(error){
-                    alert("Something hecked up, man");
+                    alert(error);
                 }
             },
             async getLanguages(){
