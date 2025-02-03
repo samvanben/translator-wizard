@@ -3,6 +3,7 @@ workdir /app
 copy package*.json ./
 run npm install
 copy . .
+RUN ls -l /app
 RUN ls -l /app/set-secrets.sh
 RUN chmod +x /app/set-secrets.sh
 RUN ls -l /app/set-secrets.sh
